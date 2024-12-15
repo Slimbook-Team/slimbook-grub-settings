@@ -1,0 +1,19 @@
+Source: slimbook-grub-settings
+Section: libs
+Priority: optional
+Maintainer: Slimbook <dev@slimbook.es>
+Build-Depends: debhelper-compat (=13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/Slimbook-Team/slimbook-grub-settings
+
+Package: slimbook-grub-plymouth-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Fix for Plymouth freeze
+ Sets simpledrm at cmdline to avoid Plymouth fight with sddm
+
+Package: slimbook-grub-psr-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Fix for amdgpu psr
+ Disables amdgpu psr at cmdline, needed on Excalibur R16
