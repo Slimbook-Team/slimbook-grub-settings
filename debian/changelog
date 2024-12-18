@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.1.0) noble; urgency=medium
+
+  * Using psr fix only on some Excalibur models
+
+ -- Slimbook <dev@slimbook.es>  Wed, 18 Dec 2024 12:47:16 +0100
+
 slimbook-grub-settings (24.0.1) noble; urgency=medium
 
   * Triggering update-grub
