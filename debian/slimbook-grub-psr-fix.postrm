@@ -4,6 +4,8 @@ set -e
 
 #DEBHELPER#
 
-update-grub
+if [ ! ischroot ]; then
+    update-grub
+fi
 
 exit 0
