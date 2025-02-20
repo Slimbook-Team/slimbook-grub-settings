@@ -17,3 +17,9 @@ Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Fix for amdgpu psr
  Disables amdgpu psr at cmdline, needed on Excalibur R16
+
+Package: slimbook-grub-memsleep-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Enables deeper sleep mode
+ Enables deeper sleep mode for those devices without S2 support
