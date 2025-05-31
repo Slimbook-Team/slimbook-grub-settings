@@ -29,3 +29,15 @@ Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Avoids system to be waked up by gpio
  Avoids spurious wakes from gpio interrupts of pin 6 on some qc71 systems
+
+Package: slimbook-grub-ecwake-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Avoids system to be waked up by EC
+ Avoids spurious wakes from EC interrupts systems
+
+Package: slimbook-grub-deepsleep-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Forces S3 sleep
+ Forces deeper S3 sleep mode

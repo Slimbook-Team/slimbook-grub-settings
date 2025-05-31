@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+if [ ! ischroot ]; then
+    update-grub
+fi
+
+exit 0
