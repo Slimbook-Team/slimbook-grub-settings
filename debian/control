@@ -22,4 +22,10 @@ Package: slimbook-grub-memsleep-fix
 Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Enables deeper sleep mode
- Enables deeper sleep mode for those devices without S2 support
+ Enables deeper sleep mode for those devices without S3 support
+
+Package: slimbook-grub-gpiowake-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Avoids system to be waked up by gpio
+ Avoids spurious wakes from gpio interrupts of pin 6 on some qc71 systems
