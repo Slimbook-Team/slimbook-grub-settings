@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.3.0) noble; urgency=medium
+
+  * Added specific quirks for keyboard and gpio spurious wakeups
+
+ -- Slimbook <dev@slimbook.es>  Tue, 03 Jun 2025 15:24:20 +0200
+
 slimbook-grub-settings (24.2.1) noble; urgency=medium
 
   * Using a different fix for acpi sleep issue

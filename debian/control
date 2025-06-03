@@ -21,8 +21,8 @@ Description: Fix for amdgpu psr
 Package: slimbook-grub-memsleep-fix
 Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Enables deeper sleep mode
- Enables deeper sleep mode for those devices without S3 support
+Description: Provisional workaround for Evo model
+ Provisional workaround for Evo model
 
 Package: slimbook-grub-gpiowake-fix
 Architecture: amd64
@@ -35,9 +35,3 @@ Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Avoids system to be waked up by EC
  Avoids spurious wakes from EC interrupts systems
-
-Package: slimbook-grub-deepsleep-fix
-Architecture: amd64
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Forces S3 sleep
- Forces deeper S3 sleep mode
