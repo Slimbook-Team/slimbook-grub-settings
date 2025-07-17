@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.3.1) noble; urgency=medium
+
+  * Removing the Excalibur filter at PSR fix
+
+ -- Slimbook <dev@slimbook.es>  Thu, 17 Jul 2025 09:28:21 +0200
+
 slimbook-grub-settings (24.3.0) noble; urgency=medium
 
   * Added specific quirks for keyboard and gpio spurious wakeups
