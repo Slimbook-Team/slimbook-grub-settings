@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.3.2) noble; urgency=medium
+
+  * Disabled amdgpu panel replay technology
+
+ -- Slimbook <dev@slimbook.es>  Wed, 13 Aug 2025 16:51:07 +0200
+
 slimbook-grub-settings (24.3.1) noble; urgency=medium
 
   * Removing the Excalibur filter at PSR fix
