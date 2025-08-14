@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.3.2.1) noble; urgency=medium
+
+  * Fixed post scripts permissions
+
+ -- Slimbook <dev@slimbook.es>  Thu, 14 Aug 2025 10:34:25 +0200
+
 slimbook-grub-settings (24.3.2) noble; urgency=medium
 
   * Disabled amdgpu panel replay technology
