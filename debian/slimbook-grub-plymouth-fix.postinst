@@ -4,9 +4,7 @@ set -e
 
 case "$1" in
     configure)
-        if [ !ischroot ]; then
-            update-grub
-        fi
+        ischroot || update-grub
     ;;
 
     abort-upgrade|abort-deconfigure|abort-remove)

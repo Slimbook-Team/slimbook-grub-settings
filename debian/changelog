@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.3.2.3) noble; urgency=medium
+
+  * Fixed (again) post scripts
+
+ -- Slimbook <dev@slimbook.es>  Thu, 14 Aug 2025 14:22:39 +0200
+
 slimbook-grub-settings (24.3.2.2) noble; urgency=medium
 
   * Fixed post script bug 
