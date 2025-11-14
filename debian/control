@@ -36,7 +36,7 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Avoids system to be waked up by EC
  Avoids spurious wakes from EC interrupts systems
 
-Package: slimbook-grub-amd_iommu-fix
+Package: slimbook-grub-amdiommu-fix
 Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Disables Amd iommu
