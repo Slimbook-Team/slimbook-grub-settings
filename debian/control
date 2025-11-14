@@ -35,3 +35,15 @@ Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Avoids system to be waked up by EC
  Avoids spurious wakes from EC interrupts systems
+
+Package: slimbook-grub-amd_iommu-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Disables Amd iommu
+ Disables Amd iommu in order to fix some laptops freezed on S2idle
+
+Package: slimbook-grub-fbcon-nodefer-fix
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Disables framebuffer deferring
+ Disables framebuffer console deferring. This fix some devices refusing to shutdown.
