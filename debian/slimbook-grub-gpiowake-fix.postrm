@@ -4,6 +4,10 @@ set -e
 
 #DEBHELPER#
 
-ischroot || update-grub
+if ! ischroot; then
+    if [ -f /usr/sbin/update-grub ]; then
+        update-grub
+    fi
+fi
 
 exit 0
