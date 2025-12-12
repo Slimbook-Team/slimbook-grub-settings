@@ -1,3 +1,9 @@
+slimbook-grub-settings (24.5.0.0~alpha0) noble; urgency=medium
+
+  * Testing a dual grub/kernelstub postinstall script
+
+ -- Slimbook <dev@slimbook.es>  Fri, 12 Dec 2025 23:21:36 +0100
+
 slimbook-grub-settings (24.4.0.0) noble; urgency=medium
 
   * Added fix for deferred console (fixes some shutdown problems)
