@@ -4,13 +4,15 @@ set -e
 
 #DEBHELPER#
 
+CFGFILE="amd_iommu"
+
 if ! ischroot; then
     if [ -f /usr/sbin/update-grub ]; then
         update-grub
     fi
 
     if [ -f /usr/bin/kernelstub ]; then
-        STUB=$(cat "/etc/default/grub.d/slimbook-$CFGFILE-fix.cfg" | sed -e 's/GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT /"/g')
+        STUB=$(cat "/etc/default/grub.d/slimbook-$CFGFILE-fix.cfg" | sed -e 's/GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT /"/g' | tr -d \")
 
         kernelstub -d $STUB
     fi

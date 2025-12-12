@@ -1,4 +1,4 @@
-slimbook-grub-settings (24.5.0.0~alpha0) noble; urgency=medium
+slimbook-grub-settings (24.5.0.0~alpha1) noble; urgency=medium
 
   * Testing a dual grub/kernelstub postinstall script
 

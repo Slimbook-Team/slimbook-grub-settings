@@ -13,7 +13,7 @@ case "$1" in
             fi
 
             if [ -f /usr/bin/kernelstub ]; then
-                STUB=$(cat "/etc/default/grub.d/slimbook-$CFGFILE-fix.cfg" | sed -e 's/GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT /"/g')
+                STUB=$(cat "/etc/default/grub.d/slimbook-$CFGFILE-fix.cfg" | sed -e 's/GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT /"/g' | tr -d \")
 
                 kernelstub -a $STUB
             fi
