@@ -1,3 +1,9 @@
+slimbook-grub-settings (26.5~alpha0) resolute; urgency=medium
+
+  * 26.04 release
+
+ -- Slimbook <dev@slimbook.es>  Tue, 07 Apr 2026 23:00:19 +0200
+
 slimbook-grub-settings (24.5.0.1) noble; urgency=medium
 
   * Testing a dual grub/kernelstub postinstall script
