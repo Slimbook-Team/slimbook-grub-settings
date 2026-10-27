@@ -39,7 +39,7 @@ Description: Avoids system to be waked up by EC
 Package: slimbook-grub-amdiommu-fix
 Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Disables Amd iommu
+Description: Disables Amd iommu (Dummy package now)
  Disables Amd iommu in order to fix some laptops freezed on S2idle
 
 Package: slimbook-grub-fbcon-nodefer-fix
