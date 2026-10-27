@@ -1,13 +1,5 @@
 #!/bin/sh
 
-set -e
-
 #DEBHELPER#
 
-if ! ischroot; then
-    if [ -f /usr/sbin/update-grub ]; then
-        update-grub
-    fi
-fi
 
-exit 0

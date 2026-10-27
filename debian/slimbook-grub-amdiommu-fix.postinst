@@ -1,35 +1,3 @@
 #!/bin/sh
 
-set -e
-
-CFGFILE="amd_iommu"
-
-case "$1" in
-    configure)
-
-        if ! ischroot; then
-            if [ -f /usr/sbin/update-grub ]; then
-                update-grub
-            fi
-
-            if [ -f /usr/bin/kernelstub ]; then
-                STUB=$(cat "/etc/default/grub.d/slimbook-$CFGFILE-fix.cfg" | sed -e 's/GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT /"/g' | tr -d \")
-
-                kernelstub -a $STUB
-            fi
-        fi
-
-    ;;
-
-    abort-upgrade|abort-deconfigure|abort-remove)
-    ;;
-
-    *)
-    echo "$0 called with unknown argument \`$1'" 1>&2
-    exit 1
-    ;;
-esac
-
 #DEBHELPER#
-
-exit 0
